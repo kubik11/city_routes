@@ -1,0 +1,15 @@
+<% include partials/header %>
+	<div class = "container">
+		<h1>Add comment</h1>
+		<form action="/vikingg/<%= storage._id %>/comments/create" method="POST">
+		  <div class="form-group">
+		    <label for="exampleInputEmail1">author</label>
+		    <input type="text" class="form-control"  value="<%= storage.comments.author %>" name="author_name">
+		  </div>
+		  <div class="form-control">
+		  	<textarea rows="10" style="width: 100%; border: none; outline: none;" name="snipet" placeholder="Type some comment about this person"><%= storage.comments.snipet %></textarea>
+		  </div>
+		  <button type="submit" class="btn btn-primary" style=" margin-top: 30px;">Submit</button>
+		</form>
+	</div>
+<% include partials/footer %>

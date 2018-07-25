@@ -1,0 +1,39 @@
+<% include partials/header %>
+
+<!-- <div class="wrap-anim"> -->
+	<img src="img/bottle_1.png" alt="#" class="bottle-1">
+	<img src="img/hand_offer.png" alt="#" class="hand-offer">
+<!-- </div> -->
+
+<header>
+	<div class="container">
+		<p class="caption">	Find out how far this place from you !!!</p>	
+	</div>
+</header>
+<main>
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-sm-8">
+				<form action="/home" method="POST" id="main-form">
+					<div class="form-group input-wrap">
+						<label for="place">Choose the place</label>
+						<input type="text" class="form-control" id="place"  placeholder="Enter the place" name="place">
+						<!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+					</div>
+					<button type="submit" class="btn btn-primary" id="submit">Submit</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</main>
+<section class="map">
+	<div class="my-map" id="map"></div>
+</section>
+<div class="container">
+	<div class="notification">
+	
+	</div>
+</div>
+
+
+<% include partials/footer %>
